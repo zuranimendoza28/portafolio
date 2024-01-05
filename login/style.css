@@ -1,0 +1,25 @@
+* {
+    font-family: 'Courgette', cursive;
+}
+
+.form{
+    width: 500px;
+    border: solid rgb(0, 0, 0);
+   
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://blog.tripsology.com/wp-content/uploads/2016/05/shutterstock_387692950.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#email{
+    width: 300px;
+}
+button{
+    margin: 10px;
+}

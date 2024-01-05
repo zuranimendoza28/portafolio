@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="nombre1"></h1>
+    <div class="container" id="container">
+    
+    </div>
+    <button onclick="volver()">salir</button>
+
+    <script>
+        let nombre = sessionStorage.getItem('usurioLogeado');
+        if(!nombre){
+            location.href="./inicio.html";
+        }
+        let nombre1 = document.getElementById('nombre1');
+        let nombrePersona = sessionStorage.getItem('saludo')
+        nombre1.innerText = "bienvenida " + nombrePersona
+
+        let contenedor = document.getElementById('container');
+        let img = sessionStorage.getItem("imagenes").split(",")
+        console.log(img)
+        img.forEach((imagen)=>{
+        let row = document.createElement('div')
+        row.classList.add('row')
+        let imagenes = document.createElement('img')
+        imagenes.src = imagen
+        imagenes.style.width="950px"
+        row.appendChild(imagenes)
+        contenedor.appendChild(row)
+
+
+        })
+
+        
+    </script>
+
+    
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.imagen{
+    margin-left: 800px;
+    padding: 50px;
+}
+
+button {
+    width: 250px;
+}
+.theme-dark{
+    background-color: #333;
+}
+.theme-light{
+    background-color: #fcdcdc;
+}
+.theme-free{
+    background-color:rgb(170, 92, 244);
+}
+.theme-dark .card{
+    background-color: #6c757d;
+}
+.theme-light .card{
+    background-color: #f7eaea;
+}
+.theme-free .card{
+    background-color:rgb(208, 170, 243);
+}
+.theme-free .btn{
+    background-color:rgb(90, 5, 169);
+    color:#f7eaea;
+    border: none;
+}
+.theme-free .btn:hover{
+    background-color:rgb(174, 111, 233);
+}
+.theme-dark .btn{
+    background-color:black;
+    border: none;
+}
+.theme-dark .btn:hover{
+    background-color:rgb(51, 44, 44);
+}
+
+
